@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Silk Perks Helper</title>
+<style>
+  :root { --plum:#482833; --deep:#1a0c10; --pewter:#7b7578; --bone:#efe9e4; --silver:#d5cecf; --muted:#b2a8aa; --cool:#59b5cf; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px;
+    font-family: Georgia, 'Palatino Linotype', serif; color: var(--silver);
+    background: radial-gradient(ellipse at 50% 0%, #3a1f29 0%, var(--deep) 70%);
+  }
+  main { width: 100%; max-width: 460px; text-align: center; }
+  h1 { margin: 0 0 6px; color: var(--bone); font-size: 28px; letter-spacing: 2px; text-transform: uppercase; }
+  p.lead { margin: 0 0 22px; color: var(--muted); line-height: 1.5; }
+  .btn {
+    display: inline-block; padding: 12px 26px; border-radius: 10px; text-decoration: none;
+    font-weight: 700; letter-spacing: .5px; color: var(--bone);
+    border: 1.5px solid var(--silver); background: linear-gradient(180deg, #985262 0%, #5a2a36 100%);
+  }
+  .btn:hover { border-color: var(--cool); box-shadow: 0 0 16px rgba(89,181,207,.4); }
+  .btn[aria-disabled=true] { opacity: .5; pointer-events: none; }
+  .meta { margin-top: 10px; font-size: 12px; color: var(--muted); }
+  ul { text-align: left; margin: 26px 0 0; padding: 14px 18px 14px 34px; border: 1px solid rgba(123,117,120,.55); border-radius: 10px; background: rgba(0,0,0,.25); line-height: 1.5; font-size: 13.5px; }
+  li { margin: 4px 0; }
+  li::marker { color: var(--cool); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Silk Perks Helper</h1>
+  <p class="lead">Optional companion for the Silk Perks Twitch extension. It reads your perks from the screen and updates the extension for you.</p>
+
+  <!-- link na installer: postavi kad izade -->
+  <a class="btn" id="dl" href="#" aria-disabled="true">Coming soon</a>
+  <div class="meta">Windows 10 / 11</div>
+
+  <ul>
+    <li>Only download the helper from this page.</li>
+    <li>It never reads game memory - it looks at the screen like OBS does, so it is safe with Easy Anti-Cheat.</li>
+    <li>It only sends your current perk names to the extension - nothing else leaves your PC.</li>
+    <li>You can uninstall it any time from Windows Settings &rarr; Apps.</li>
+  </ul>
+</main>
+</body>
+</html>
